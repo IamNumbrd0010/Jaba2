@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Packages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP -->
+<div class="top-bar">
+  <span onclick="goTo('index.html')">←</span>
+  <h2>Surprises 🎁</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html" class="logo-link">
+    <img src="logo.png" alt="Logo">
+  </a>
+</div>
+
+<div class="page-intro">
+  Create something unforgettable ✨
+</div>
+
+<!-- CATEGORY -->
+<section class="section">
+  <h3>Choose Surprise Type</h3>
+
+  <div class="type-grid">
+
+    <div class="type-card" onclick="goTo('money.html')">
+      💸 Money Bouquet
+      <small>Say it with cash</small>
+    </div>
+
+    <div class="type-card" onclick="goTo('balloon.html')">
+      🎈 Hot Air Balloon
+      <small>A floating surprise</small>
+    </div>
+
+    <div class="type-card" onclick="goTo('flowers.html')">
+      💐 Flower Bouquet
+      <small>Classic and timeless</small>
+    </div>
+
+    <div class="type-card" onclick="goTo('giftbox.html')">
+      🎁 Gift Box
+      <small>Fully customizable</small>
+    </div>
+
+    <div class="type-card" onclick="goTo('cards.html')">
+      💌 Cards
+      <small>Add a message</small>
+    </div>
+
+  </div>
+</section>
+
+<!-- CART PREVIEW -->
+<section class="order-box">
+  <h3>🧾 Your Cart</h3>
+  <div id="cartPreview"></div>
+  <p id="cartTotal">₦0</p>
+
+  <button class="checkout" onclick="goTo('summary.html')">
+    View Full Order 💬
+  </button>
+</section>
+
+<script src="surprise.js"></script>
+</body>
+</html>

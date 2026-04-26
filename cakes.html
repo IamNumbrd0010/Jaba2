@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cakes - IstyCakes</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="top-bar">
+    <span onclick="goTo('index.html')">←</span>
+    <h2>Cakes</h2>
+  </div>
+
+  <!-- Intro -->
+  <div class="page-intro">
+    Choose your cake style 🎂
+  </div>
+
+  <!-- Cake Types -->
+  <section class="cake-grid">
+
+    <div class="cake-card naked" onclick="goTo('naked.html')">
+      <div class="cake-overlay"></div>
+      <h2>Naked Cakes</h2>
+      <p>Simple. Soft. Elegant.</p>
+    </div>
+
+    <div class="cake-card celebration" onclick="goTo('celebration.html')">
+      <div class="cake-overlay"></div>
+      <h2>Celebration Cakes</h2>
+      <p>Bold. Beautiful. Extra.</p>
+    </div>
+
+  </section>
+
+  <!-- ✅ GLOBAL NAV HELPERS ONLY -->
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>

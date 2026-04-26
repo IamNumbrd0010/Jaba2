@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebration Cakes</title>
+
+  <link rel="stylesheet" href="celebration.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <span onclick="goTo('cakes.html')">←</span>
+  <h2>Celebration Cakes 🎂</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html">
+    <img src="logo.png" alt="Logo" style="height:40px;">
+  </a>
+</div>
+
+<div class="page-intro">
+  Build your perfect cake 🎉
+</div>
+
+<!-- FLAVORS -->
+<section class="section">
+  <h3>Choose Flavors</h3>
+  <div class="flavor-row">
+    <div class="flavor">Vanilla</div>
+    <div class="flavor">Chocolate</div>
+    <div class="flavor">Red Velvet</div>
+  </div>
+</section>
+
+<br>
+
+<!-- TYPE -->
+<section class="section">
+  <h3>Choose Cake Type</h3>
+  <div class="type-grid">
+    <div class="type-card" data-type="foil">🎁 Frosted Foil</div>
+    <div class="type-card" data-type="bento">🎂 Bento Cake</div>
+    <div class="type-card" data-type="celebration">🎉 Celebration</div>
+  </div>
+</section>
+
+<br>
+
+<section class="section" id="options"></section>
+
+<br>
+
+<p style="padding:0 15px;">
+If you want more layers, pick 2 layers here and mention extra needs on WhatsApp.
+</p> <br>
+<p style="padding:0 15px;">
+  If you want words on the cake, it is #500 for the first 10, and #50 for every letter after, drawings are #2000
+  </p>
+<br>
+
+<!-- QTY -->
+<section class="section">
+  <h3>Quantity</h3>
+  <div class="quantity">
+    <button onclick="changeQty(-1)">-</button>
+    <span id="qty">1</span>
+    <button onclick="changeQty(1)">+</button>
+  </div>
+</section>
+
+<!-- PREVIEW -->
+<section class="section preview-box">
+  <p id="previewText">Nothing selected</p>
+  <h3 id="previewPrice">₦0</h3>
+  <button onclick="addToCart()">Add to Order</button>
+</section>
+
+<!-- LIVE CART PREVIEW -->
+<section class="order-box">
+  <h3>🧾 Your Order</h3>
+  <div id="orderList"></div>
+  <p id="total">₦0</p>
+  <button class="checkout" onclick="checkout()">Checkout 💬</button>
+</section>
+
+<script src="celebration.js"></script>
+
+</body>
+</html>

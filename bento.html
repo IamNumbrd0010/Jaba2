@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bento Cakes - IstyCakes</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top -->
+  <div class="top-bar">
+    <span onclick="goBack()">←</span>
+    <h2>Bento Cakes</h2>
+  </div>
+
+  <div class="page-intro">Customize your cake 🎂</div>
+
+  <!-- Product Image -->
+  <div class="product-img"></div>
+
+  <!-- OPTIONS -->
+  <div class="options">
+
+    <!-- Size -->
+    <h3>Choose Size</h3>
+    <div class="option-group" id="size">
+      <div data-price="5000">4" — ₦5,000</div>
+      <div data-price="8000">6" — ₦8,000</div>
+      <div data-price="12000">8" — ₦12,000</div>
+    </div>
+
+    <!-- Flavor -->
+    <h3>Flavor</h3>
+    <div class="option-group" id="flavor">
+      <div data-price="0">Chocolate</div>
+      <div data-price="0">Vanilla</div>
+      <div data-price="500">Red Velvet — +₦500</div>
+    </div>
+
+    <!-- Frosting -->
+    <h3>Frosting</h3>
+    <div class="option-group" id="frosting">
+      <div data-price="0">Buttercream</div>
+      <div data-price="1000">Cream Cheese — +₦1,000</div>
+      <div data-price="1500">Ganache — +₦1,500</div>
+    </div>
+
+    <!-- Writing -->
+    <h3>Writing on Cake</h3> <p>Minimum of #500 for 10 letters, every extra letter is #50</p>
+    <input type="text" id="writing" placeholder="Type message (max 40 chars)">
+    <p id="writingPrice">₦0</p>
+
+    <!-- Drawing -->
+    <h3>Add Drawing</h3>
+    <div class="option-group" id="drawing">
+      <div data-price="0" class="active">No</div>
+      <div data-price="2000">Yes — ₦2,000</div>
+      <!-- Hidden by default -->
+<input type="text" id="drawingText" placeholder="Describe the drawing (max 40 chars)" style="display:none;">
+    </div>
+
+    <!-- Quantity -->
+    <h3>Quantity</h3>
+    <div class="quantity">
+      <button onclick="changeQty(-1)">-</button>
+      <span id="qty">1</span>
+      <button onclick="changeQty(1)">+</button>
+    </div> <br>
+
+    <h3>Anything else?</h3>
+<textarea id="note" placeholder="Extra instructions for the baker..."></textarea>
+
+  </div> <br> <br> <br>
+
+  <!-- Sticky Bar -->
+  <div class="bottom-bar">
+    <span id="total">₦0</span>
+    <button onclick="orderNow()">Order 💬</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

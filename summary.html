@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <span onclick="goBack()">←</span>
+  <h2>Order Summary 🧾</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html" class="logo-link">
+    <img src="logo.png" alt="Logo">
+  </a>
+</div>
+
+<div class="page-intro">
+  Review your order before sending 💬
+</div>
+
+<!-- SUMMARY -->
+<section class="section">
+  <div id="summaryBox"></div>
+</section>
+
+<!-- TOTAL -->
+<section class="section">
+  <h3 id="totalPrice">₦0</h3>
+</section>
+
+<!-- ACTIONS -->
+<section class="section preview-box">
+  <button class="add-btn" onclick="sendToWhatsApp()">
+    Send Order on WhatsApp 💬
+  </button>
+
+  <button class="checkout" onclick="clearCart()" style="margin-top:10px; background:#e53935;">
+    Clear Cart 🗑️
+  </button>
+</section>
+
+<script src="summary.js"></script>
+</body>
+</html>

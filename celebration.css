@@ -1,0 +1,310 @@
+/* GENERAL RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  padding-bottom: 90px; /* space for sticky bar */
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-bar span {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.top-bar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+/* logo top right */
+.logo-link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.logo-link img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.logo-link img {
+  transition: 0.2s;
+}
+
+.logo-link img:hover {
+  transform: scale(1.1);
+}
+.logoMove {
+  padding-left: 100px;
+}
+
+/* INTRO */
+.page-intro {
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* SECTION */
+.section {
+  padding: 15px;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* FLAVORS */
+.flavor-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.flavor {
+  padding: 8px 12px;
+  border-radius: 15px;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.flavor.active {
+  background: #f8bbd0;
+  transform: scale(1.05);
+}
+
+/* CAKE ITEMS */
+.cake-item {
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cake-item.active {
+  outline: 2px solid #d4a373;
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* IMAGE PLACEHOLDER (SQUARE) */
+.img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #ddd;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+/* TEXT */
+.cake-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.cake-item span {
+  font-size: 13px;
+  color: #666;
+}
+
+/* CAKE CARD (CELEBRATION GROUP) */
+.cake-card {
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+/* LAYER OPTIONS */
+.layer {
+  margin-top: 6px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.layer.active {
+  background: #d4a373;
+  color: white;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* QUANTITY */
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  padding: 8px 12px;
+  border: none;
+  background: #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quantity span {
+  font-size: 16px;
+}
+
+/* STICKY BAR */
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: white;
+  padding: 12px 15px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 999;
+}
+
+/* STICKY TEXT */
+#previewText {
+  font-size: 13px;
+  max-width: 60%;
+}
+
+#previewPrice {
+  font-weight: bold;
+}
+
+/* BUTTON */
+.sticky-bar button {
+  padding: 10px 14px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ORDER BOX */
+.order-box {
+  margin: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 20px;
+}
+
+.checkout {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* SMOOTH TOUCH FEEL */
+button, .cake-item, .layer, .flavor {
+  -webkit-tap-highlight-color: transparent;
+}
+/* TYPE CARDS */
+.type-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.type-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.type-card.active {
+  background: #d4a373;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* OPTION BUTTONS */
+.option-btn {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option-btn.active {
+  background: #d4a373;
+  color: white;
+}
+
+/* SIZE PILLS */
+.size-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.size-pill {
+  padding: 8px 12px;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.size-pill.active {
+  background: #d4a373;
+  color: white;
+}
+
+/* PREVIEW */
+.preview-box {
+  background: white;
+  margin: 15px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}

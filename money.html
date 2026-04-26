@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Bouquet</title>
+
+  <link rel="stylesheet" href="naked.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <span onclick="goTo('surprise.html')">←</span>
+  <h2>Money Bouquet 💸</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html">
+    <img src="logo.png" alt="Logo" style="height:40px;">
+  </a>
+</div>
+
+<div class="page-intro">
+  A bold way to say you care 💰✨
+</div>
+
+<!-- OPTIONS -->
+<section class="section">
+
+  <div class="cake-item" onclick="selectOption('₦20,000 Bouquet','₦500 notes',38000)">
+    <!-- <div class="img"></div> -->
+    <h4>₦20,000 Bouquet</h4>
+    <p>₦500 denomination</p>
+    <strong>₦38,000</strong>
+  </div>
+
+  <br>
+
+  <div class="cake-item" onclick="selectOption('₦50,000 Bouquet','₦500 notes',85000)">
+    <!-- <div class="img"></div> -->
+    <h4>₦50,000 Bouquet</h4>
+    <p>₦500 denomination</p>
+    <strong>₦85,000</strong>
+  </div>
+
+  <br>
+
+  <div class="cake-item" onclick="selectOption('₦100,000 Bouquet','₦500 notes',150000)">
+    <!-- <div class="img"></div> -->
+    <h4>₦100,000 Bouquet</h4>
+    <p>₦500 denomination</p>
+    <strong>₦150,000</strong>
+  </div>
+
+</section>
+
+<br>
+
+<!-- CAPTION -->
+<section class="section">
+  <h3>Caption (optional)</h3>
+  <input type="text" id="caption" placeholder="Write something special...">
+</section>
+
+<br>
+
+<!-- QUANTITY -->
+<section class="section">
+  <h3>Quantity</h3>
+  <div class="quantity">
+    <button onclick="changeQty(-1)">-</button>
+    <span id="qty">1</span>
+    <button onclick="changeQty(1)">+</button>
+  </div>
+</section>
+
+<br>
+
+<!-- PREVIEW -->
+<section class="section preview-box">
+  <p id="previewText">Nothing selected</p>
+  <h3 id="previewPrice">₦0</h3>
+  <button onclick="addToCart()">Add to Order</button>
+</section>
+
+<script src="cart.js"></script>
+<script src="money.js"></script>
+
+</body>
+</html>

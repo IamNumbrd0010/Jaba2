@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards</title>
+
+  <link rel="stylesheet" href="naked.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <span onclick="goTo('surprise.html')">←</span>
+  <h2>Cards 💌</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html">
+    <img src="logo.png" alt="Logo" style="height:40px;">
+  </a>
+</div>
+
+<div class="page-intro">
+  Add a heartfelt touch 💖
+</div>
+
+<!-- OPTIONS -->
+<section class="section">
+
+  <div class="cake-item" onclick="selectOption('Handwritten Card',500)">
+    <!-- <div class="img"></div> -->
+    <h4>Handwritten Card</h4>
+    <p>Simple and personal</p>
+    <strong>₦500</strong>
+  </div>
+
+  <br><br>
+
+  <div class="cake-item" onclick="selectOption('Customized Card',2000)">
+    <!-- <div class="img"></div> -->
+    <h4>Customized Card</h4>
+    <p>Designed specially for you</p>
+    <strong>₦2,000</strong>
+  </div>
+
+</section>
+
+<br><br>
+
+<section class="section">
+  <h3>What should the card say?</h3>
+  <textarea id="message" placeholder="Write your message here..."></textarea>
+</section>
+
+<br><br>
+
+<section class="section">
+  <h3>Quantity</h3>
+  <div class="quantity">
+    <button onclick="changeQty(-1)">-</button>
+    <span id="qty">1</span>
+    <button onclick="changeQty(1)">+</button>
+  </div>
+</section>
+
+<br><br>
+
+<section class="section preview-box">
+  <p id="previewText">Nothing selected</p>
+  <h3 id="previewPrice">₦0</h3>
+  <button onclick="addToCart()">Add to Order</button>
+</section>
+
+<script src="cart.js"></script>
+<script src="cards.js"></script>
+
+</body>
+</html>

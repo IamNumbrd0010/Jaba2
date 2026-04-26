@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies</title>
+
+  <link rel="stylesheet" href="naked.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <span onclick="goTo('index.html')">←</span>
+  <h2>Cookies 🍪</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html">
+    <img src="logo.png" alt="Logo" style="height:40px;">
+  </a>
+</div>
+
+<div class="page-intro">
+  Fresh, soft, and sweet 🍪
+</div>
+
+<br>
+
+<section class="section">
+  <h3>Choose Size</h3>
+
+  <div class="grid">
+    <div class="option-btn" onclick="selectSize('Small',1000)">
+      Small — ₦1,000
+    </div>
+
+    <div class="option-btn" onclick="selectSize('Big',2000)">
+      Big — ₦2,000
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section class="section">
+  <h3>Quantity</h3>
+  <div class="quantity">
+    <button onclick="changeQty(-1)">-</button>
+    <span id="qty">1</span>
+    <button onclick="changeQty(1)">+</button>
+  </div>
+</section>
+
+<br>
+
+<section class="section preview-box">
+  <p id="previewText">Nothing selected</p>
+  <h3 id="previewPrice">₦0</h3>
+  <button onclick="addToCart()">Add to Order</button>
+</section>
+
+<script src="cart.js"></script>
+<script src="cookies.js"></script>
+
+</body>
+</html>

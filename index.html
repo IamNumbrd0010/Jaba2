@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IstyCakes & Surprises</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <h1>IstyCakes & Surprises</h1>
+
+    <!-- Logo Placeholder -->
+    <div class="logo"></div>
+
+    <p class="intro">
+      We create beautifully crafted cakes, delicious treats, and unforgettable surprise packages 
+      for your special moments. Whether it's love, celebration, or just because… we make it sweet.
+    </p>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section class="categories">
+
+    <div class="card" onclick="goTo('cakes.html')">
+      <div class="overlay"></div>
+      <h2>🎂 Cakes</h2>
+    </div>
+
+    <div class="card" onclick="goTo('cookies.html')">
+      <div class="overlay"></div>
+      <h2>🍪 Cookies</h2>
+    </div>
+
+    <div class="card" onclick="goTo('surprise.html')">
+      <div class="overlay"></div>
+      <h2>🎁 Surprise Packages</h2>
+    </div>
+
+  </section>
+
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+  <script src="cart.js"></script>
+  <script src="your-main-js-file.js"></script>
+
+</body>
+</html>

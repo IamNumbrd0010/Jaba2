@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Box</title>
+
+  <link rel="stylesheet" href="naked.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <span onclick="goTo('surprise.html')">←</span>
+  <h2>Gift Box 🎁</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html">
+    <img src="logo.png" alt="Logo" style="height:40px;">
+  </a>
+</div>
+
+<div class="page-intro">
+  Build something special ✨
+</div>
+
+<!-- BUDGET -->
+<section class="section">
+  <h3>Your Budget (₦)</h3>
+  <input type="number" id="budget" placeholder="e.g. 20000">
+</section>
+
+<br>
+
+<!-- ITEMS -->
+<section class="section">
+  <h3>What should be inside?</h3>
+  <textarea id="items" placeholder="Perfume, chocolate, teddy bear..."></textarea>
+</section>
+
+<br>
+
+<!-- MESSAGE -->
+<section class="section">
+  <h3>Message (optional)</h3>
+  <input type="text" id="message" placeholder="Write something meaningful...">
+</section>
+
+<br>
+
+<!-- QUANTITY -->
+<section class="section">
+  <h3>Quantity</h3>
+  <div class="quantity">
+    <button onclick="changeQty(-1)">-</button>
+    <span id="qty">1</span>
+    <button onclick="changeQty(1)">+</button>
+  </div>
+</section>
+
+<br>
+
+<!-- PREVIEW -->
+<section class="section preview-box">
+  <p id="previewText">Fill in your box details</p>
+  <h3 id="previewPrice">₦0</h3>
+  <button onclick="addToCart()">Add to Order</button>
+</section>
+
+<script src="cart.js"></script>
+<script src="giftbox.js"></script>
+
+</body>
+</html>

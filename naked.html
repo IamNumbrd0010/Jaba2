@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naked Cakes - IstyCakes</title>
+
+  <link rel="stylesheet" href="naked.css">
+</head>
+<body>
+
+<!-- Top -->
+<div class="top-bar">
+  <span onclick="goTo('cakes.html')">←</span>
+  <h2>Naked Cakes</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html" class="logo-link">
+    <img src="logo.png" alt="IstyCakes Logo">
+  </a>
+</div>
+
+<div class="page-intro">Pick and build your order 🍰</div>
+
+<!-- CAKE OPTIONS -->
+<section class="section">
+
+  <div class="grid">
+    <div class="cake-item" data-name="Foil Small" data-price="1500">
+      <div class="img"></div>
+      <p>Foil Small</p>
+      <span>₦1,500</span>
+    </div>
+
+    <div class="cake-item" data-name="Foil Medium" data-price="2500">
+      <div class="img"></div>
+      <p>Foil Medium</p>
+      <span>₦2,500</span>
+    </div>
+
+    <div class="cake-item" data-name="Foil Maxi" data-price="4500">
+      <div class="img"></div>
+      <p>Foil Maxi</p>
+      <span>₦4,500</span>
+    </div>
+  </div>
+
+  <h3>Standard Cakes</h3>
+
+  <div class="grid">
+    <div class="cake-item" data-name="6 inch Cake" data-price="5500">
+      <div class="img"></div>
+      <p>6 inch Cake</p>
+      <span>₦5,500</span>
+    </div>
+
+    <div class="cake-item" data-name="7 inch Cake" data-price="7000">
+      <div class="img"></div>
+      <p>7 inch Cake</p>
+      <span>₦7,000</span>
+    </div>
+
+    <div class="cake-item" data-name="8 inch Cake" data-price="8500">
+      <div class="img"></div>
+      <p>8 inch Cake</p>
+      <span>₦8,500</span>
+    </div>
+  </div>
+
+</section>
+
+<!-- SELECTION -->
+<section class="section">
+
+  <h3>Flavors</h3>
+  <div class="flavors">
+    <div class="flavor">Vanilla</div>
+    <div class="flavor">Chocolate</div>
+    <div class="flavor">Red Velvet</div>
+  </div>
+
+  <h3>Quantity</h3>
+  <div class="quantity">
+    <button onclick="changeQty(-1)">-</button>
+    <span id="qty">1</span>
+    <button onclick="changeQty(1)">+</button>
+  </div>
+
+  <p id="previewPrice">₦0</p>
+
+  <button class="add-btn" onclick="addToOrder()">Add to Order</button>
+
+</section>
+
+<!-- ORDER -->
+<section class="order-box">
+  <h3>🧾 Your Order</h3>
+  <div id="orderList"></div>
+  <p id="total">₦0</p>
+  <button class="checkout" onclick="checkout()">Checkout 💬</button>
+</section>
+
+<script src="naked.js"></script>
+</body>
+</html>

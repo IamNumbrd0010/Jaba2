@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Bouquet</title>
+
+  <link rel="stylesheet" href="naked.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <span onclick="goTo('surprise.html')">←</span>
+  <h2>Flower Bouquet 💐</h2>
+</div>
+
+<div class="page-intro">
+  <a href="index.html">
+    <img src="logo.png" alt="Logo" style="height:40px;">
+  </a>
+</div>
+
+<div class="page-intro">
+  Say it beautifully 🌸✨
+</div>
+
+<!-- OPTIONS -->
+<section class="section">
+
+  <div class="cake-item" onclick="selectOption('Budget Bouquet','12 stems',13000)">
+    <!-- <div class="img"></div> -->
+    <h4>Budget Bouquet</h4>
+    <p>12 flower stems</p>
+    <strong>₦13,000</strong>
+  </div>
+
+  <br>
+
+  <div class="cake-item" onclick="selectOption('Faux Bouquet','12 stems',30000)">
+    <!-- <div class="img"></div> -->
+    <h4>Faux Flower Bouquet</h4>
+    <p>12 flower stems</p>
+    <strong>₦30,000</strong>
+  </div>
+
+</section>
+
+<br>
+
+<!-- MESSAGE -->
+<section class="section">
+  <h3>Message (optional)</h3>
+  <input type="text" id="message" placeholder="Write something sweet...">
+</section>
+
+<br>
+
+<!-- QUANTITY -->
+<section class="section">
+  <h3>Quantity</h3>
+  <div class="quantity">
+    <button onclick="changeQty(-1)">-</button>
+    <span id="qty">1</span>
+    <button onclick="changeQty(1)">+</button>
+  </div>
+</section>
+
+<br>
+
+<!-- PREVIEW -->
+<section class="section preview-box">
+  <p id="previewText">Nothing selected</p>
+  <h3 id="previewPrice">₦0</h3>
+  <button onclick="addToCart()">Add to Order</button>
+</section>
+
+<script src="cart.js"></script>
+<script src="flowers.js"></script>
+
+</body>
+</html>
